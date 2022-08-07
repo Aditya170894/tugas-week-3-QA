@@ -4,13 +4,17 @@
   "description": "Belajar-api-fazztrack",
   "main": "index.js",
   "scripts": {
-    "test-lala": "node_modules/mocha/bin/_mocha testcases/**/*.js"
+    "test": "node_modules/mocha/bin/_mocha testcases/**/*.js --reporter mochawesome --require mochawesome/register"
   },
   "author": "DhonyImamS",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.6",
+    "chai-json-schema": "^1.5.1",
+    "chai-like": "^1.1.1",
+    "chai-things": "^0.2.0",
     "mocha": "^10.0.0",
+    "mochawesome": "^7.1.3",
     "supertest": "^6.2.4"
   }
 }

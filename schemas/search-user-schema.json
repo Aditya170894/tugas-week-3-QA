@@ -1,0 +1,67 @@
+{
+    "$schema": "https://json-schema.org/draft-04/schema",
+    "id": "http://example.com/example.json",
+    "type": "object",
+    "required": [
+        "data",
+        "status"
+    ],
+    "properties": {
+        "data": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "firstName",
+                    "lastName",
+                    "age",
+                    "occupation",
+                    "nationality",
+                    "hobbies",
+                    "gender",
+                    "createdDate",
+                    "updatedDate"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "firstName": {
+                        "type": "string"
+                    },
+                    "lastName": {
+                        "type": "string"
+                    },
+                    "age": {
+                        "type": "integer"
+                    },
+                    "occupation": {
+                        "type": "string"
+                    },
+                    "nationality": {
+                        "type": "string"
+                    },
+                    "hobbies": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "gender": {
+                        "type": "string"
+                    },
+                    "createdDate": {
+                        "type": "string"
+                    },
+                    "updatedDate": {
+                        "type": ["null", "string"]
+                    }
+                }
+            }
+        },
+        "status": {
+            "type": "string"
+        }
+    }
+}
