@@ -4,7 +4,7 @@
   "description": "Belajar-api-fazztrack",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/mocha/bin/_mocha testcases/**/*.js --reporter mochawesome --require mochawesome/register"
+    "test": "node ./node_modules/mocha/bin/_mocha testcases/**/*.js --reporter mochawesome --require mochawesome/register"
   },
   "author": "DhonyImamS",
   "license": "ISC",

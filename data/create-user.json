@@ -1,14 +1,15 @@
 {
-    "id": "string",
-    "firstName": "Hendri",
-    "lastName": "Antomy",
-    "age": 29,
-    "occupation": "QA Engineer",
-    "nationality": "Indonesia",
-    "hobbies": [
-      "Riding"
-    ],
-    "gender": "MALE",
-    "createdDate": "2022-08-07T02:23:43.339Z",
-    "updatedDate": "2022-08-07T02:23:43.339Z"
-  }
+  "id": "79f9a8a6-1fa8-4c1d-a910-0ac579586529",
+  "firstName": "Aditya",
+  "lastName": "Saputra",
+  "age": 27,
+  "occupation": "QA Engineer",
+  "nationality": "Indonesia",
+  "hobbies": [
+    "read novel",
+    "read manga"
+  ],
+  "gender": "MALE",
+  "createdDate": "2022-08-10T22:55:59.891",
+  "updatedDate": null
+}

@@ -22,8 +22,21 @@ function getUser2(inputData) {
         .set('Content-type', 'application/json');
 }
 
+function getUserById(inputId) {
+    return serverAPI.get(`/v1/user/${inputId}`)
+        .set('Connection', 'keep-alive')
+        .set('Content-type', 'application/json'); 
+}
+
 function postUser(bodyRequestData) {
     return serverAPI.post('/v1/users')
+        .set('Connection', 'keep-alive')
+        .set('Content-type', 'application/json')
+        .send(bodyRequestData);
+}
+
+function putUser(bodyRequestData) {
+    return serverAPI.put(`/v1/users`)
         .set('Connection', 'keep-alive')
         .set('Content-type', 'application/json')
         .send(bodyRequestData);
@@ -32,7 +45,9 @@ function postUser(bodyRequestData) {
 module.exports = {
     getUser,
     getUser2,
+    getUserById,
     postUser,
+    putUser,
 };
 
 
